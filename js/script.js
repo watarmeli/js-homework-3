@@ -5,7 +5,7 @@ function makeTask(data) {
   const priority = 'Обычный';
   // Пиши код ниже этой строки
     return { category, priority, ...data, completed }
-  // Пиши код выreturn { category, priority, ...data, completed }ше этой строки
+  // Пиши код выше этой строки
 }
 
 
