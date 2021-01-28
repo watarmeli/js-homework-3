@@ -1,3 +1,15 @@
+// var1
+function makeTask(data) {
+  const completed = false;
+  const category = 'Общее';
+  const priority = 'Обычный';
+  // Пиши код ниже этой строки
+    return { category, priority, ...data, completed }
+  // Пиши код выreturn { category, priority, ...data, completed }ше этой строки
+}
+
+
+// var2
 function makeTask(data) {
   // Пиши код ниже этой строки
 	const { category = 'Общее', priority = 'Обычный', completed = false } = data;
