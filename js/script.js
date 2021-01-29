@@ -13,7 +13,7 @@ const atTheOldToad = {
 
     for (let i = 0; i < this.potions.length; i += 1) {       
       if (this.potions[i].name === potionName.name) {
-      return `Зелье ${potionName.name} уже есть в инвентаре!`;
+        return `Зелье ${potionName.name} уже есть в инвентаре!`;
       } 
     }  
     
