@@ -11,20 +11,20 @@ const atTheOldToad = {
 
   addPotion(potionName) {
 
-    for (let i = 0; i < this.potions.length; i += 1) {       
-      if (this.potions[i].name === potionName.name) {
+    for (let potion of this.potions) {
+      if (potion.name === potionName.name) {
         return `Зелье ${potionName.name} уже есть в инвентаре!`;
-      } 
-    }  
-    
+      }
+    }
+
     this.potions.push(potionName);
     return this.potions;
-    
+
   },
-  
+
   removePotion(potionName) {
 
-    for (let i = 0; i < this.potions.length; i += 1) {       
+    for (let i = 0; i < this.potions.length; i += 1) {
       if (this.potions[i].name === potionName) {
         this.potions.splice(i, 1)
         return this.potions;
@@ -44,8 +44,8 @@ const atTheOldToad = {
       }
     }
 
-    return `Зелья ${oldName} нет в инвентаре!` 
-    
+    return `Зелья ${oldName} нет в инвентаре!`
+
   },
   // Пиши код выше этой строки
 };
